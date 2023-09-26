@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+/* as demais configurações */
+
+/* typical device breackponts
+pequenas telas: até 600px
+celular:600px até 768px
+tablet:768px até 992px
+desktops:992px até 1200px
+grandes telas:1200px and more
+ */
+
+@media screen and (min-width: 768px) and (max-width:992px) {
+    body{
+        background: url('pexel.jpg') center center no-repeat ;
+       background-size: cover;
+    }
+
+    .dados, #tema{
+        background-color: #ffffffe8;
+    }
+
+    .dados{
+        width: 430px;
+        height: 370px;
+        font-size: 23px;
+    }
+
+    #tema{
+        width: 430px;
+    }
+
+    select{
+        padding: 4px;
+    }
+}
+
+@media screen and (min-width:992px){
+    body{
+        background: url('pexel.jpg') center center no-repeat ;
+       background-size: cover;
+    }
+
+    .dados, #tema{
+        background-color: #ffffffc4;
+    }
+
+    .dados{
+        height: 380px;
+        font-size: 24px;
+    }
+
+    .dados{
+        width: 450px;
+        height: 375px;
+        font-size: 23px;
+    }
+
+    #tema{
+        width: 450px;
+    }
+
+    select{
+        padding: 4px;
+    }
+}
