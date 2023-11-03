@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
 </head>
+
 <body>
-    <main>
+    <main >
         <header id="tema">
             <h1 id="titulo">
                 Inscreva-se
@@ -18,50 +20,53 @@
             </p>
         </header>
         <article>
-                <form action="form.php" method="post">
-                    <fieldset class="dados">
-                        <div>
-                            <label for="nome">Nome:</label>
-                            <input type="text" name="n" id="nome" required placeholder="Digite seu nome">
-                        </div>
-                        <div>
-                            <label for="sob">Sobrenome:</label>
-                            <input type="text" name="s" id="sob" required placeholder="Digite seu sobrenome">
-                        </div>
-                        <div>
-                            <label for="email">E-mail:</label>
-                            <input type="email" name="em" id="email" required placeholder="Digite seu e-mail">
-                        </div>
-                        <div>
-                            <label for="idade">Idade<sup>(opcional)</sup></label>
-                            <input type="number" name="ida" id="idade" min="13" max="80">
-                        </div>
-                        <div>
-                            <label for="inscricao">Estado civil:</label>
-                            <select name="inscr" id="inscricao" required>
-                                <option value="0">Escolha as opções</option>
-                                <option value="1">Solteiro(a)</option>
-                                <option value="2">Casado(a)</option>
-                                <option value="3">Viuvo(a)</option>
-                                <option value="4">Namorando</option>
-                            </select>
-                        </div>
-                        <div>
-                            <sup>Gênero:</sup>
-                            <input type="radio" name="gen" id="F" class="alinhando"><label for="F">Feminino</label>
-                            <input type="radio" name="gen" id="M" class="alinhando"><label for="M">Masculino</label>
-                            <input type="radio" name="gen" id="O" class="alinhando"><label for="O">Outro</label>
-                        </div>
-                        <input type="submit" name="Enviar" id="envi">
-                        <div>
-                            Já possui uma conta?
-                            <a href="#">Clique aqui</a>
-                        </div>
-                    </fieldset>
+            <form action="form.php" method="post">
+                <fieldset class="dados" >
+                    <div>
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="n" id="nome" required placeholder="Digite seu nome">
+                    </div>
+                    <div>
+                        <label for="sob">Sobrenome:</label>
+                        <input type="text" name="s" id="sob" required placeholder="Digite seu sobrenome">
+                    </div>
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="em" id="email" required placeholder="Digite seu e-mail">
+                    </div>
+                    <div>
+                        <label for="idade">Idade<sup>(opcional)</sup></label>
+                        <input type="number" name="ida" id="idade" min="13" max="80">
+                    </div>
+                    <!-- <div> -->
+                        <!-- <label for="inscricao">Estado civil:</label> -->
+                        <!-- vai ser criado no javascript -->
+                        <!-- <select name="inscr" id="inscricao" required>
+                            <option value="0">Escolha as opções</option>
+                            <option value="1">Solteiro(a)</option>
+                            <option value="2">Casado(a)</option>
+                            <option value="3">Viuvo(a)</option>
+                            <option value="4">Namorando</option>
+                        </select> -->
+                    <!-- </div> -->
+                    <div id="irma">
+                        <sup>Gênero:</sup>
+                        <input type="radio" name="gen" id="F" class="alinhando"><label for="F">Feminino</label>
+                        <input type="radio" name="gen" id="M" class="alinhando"><label for="M">Masculino</label>
+                        <input type="radio" name="gen" id="O" class="alinhando"><label for="O">Outro</label>
+                    </div>
+                    <input type="submit" name="Enviar" id="envi">
+                    <div>
+                        Já possui uma conta?
+                        <a href="#">Clique aqui</a>
+                    </div>
+                </fieldset>
         </article>
     </main>
     <footer>
         Patrocinado por <i>laylasousa</i>
     </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
